@@ -1,10 +1,6 @@
 /* ===== BASE SITE CSS START ===== */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,600;1,700;1,800;1,900&display=swap');
 
-:root {
-  --bgcol-1: #000;
-}
-
 * {
   margin: 0;
   padding: 0;
@@ -20,7 +16,7 @@ html {
 
 /* 1.6rem = 16px */
 body {
-  background-color: var(--bgcol-1);
+  background-color: var(--bg-col-1);
 
   font-size: 1.6rem;
 }
@@ -30,6 +26,10 @@ body {
 nav {
   width: 100%;
   padding: 30px 40px;
+  position: fixed;
+  top: 0;
+  background-color: rgba(0, 0, 0, 0.6);
+  z-index: 1;
 }
 
 .nav_container {
@@ -44,7 +44,7 @@ nav {
 
 .nav_container > p {
   font-size: 20px;
-  color: white;
+  color: var(--font-col-1);
 
   letter-spacing: 0.5px;
 }
@@ -52,42 +52,80 @@ nav {
 /* Hero section */
 .hero_section {
   max-width: 1440px;
-  height: 90vh;
-  margin: 0 auto;
-  margin-top: 50px;
+  height: max-content;
+  margin: 160px auto 0px;
 }
 
-.hero_section > .hero_content_box {
+.hero_section > .hero_container {
   display: grid;
   grid-template-columns: 1fr;
 
+  position: relative;
+
   padding: 50px 30px;
-  gap: 20px;
+
+  gap: 30px;
 }
 
-.hero_section > .hero_content_box > h1 {
-  display: flex;
-  align-items: flex-end;
+.hero_section > .hero_container > h2 {
+  position: absolute;
+  left: 30px;
+  top: 10px;
 
-  height: 100%;
-  font-size: clamp(5rem, 10vw, 100px);
-  font-weight: 400;
+  height: max-content;
+
+  font-size: clamp(1.4rem, 3vw, 20px);
+  font-weight: 300;
+  color: var(--font-col-1);
+
   letter-spacing: 3px;
-  color: #fff;
-
-  line-height: clamp (4rem, 6vw, 80px);
 }
 
-.hero_section > .hero_content_box > p {
-  display: flex;
-  align-items: flex-end;
+.hero_section > .hero_container > h1 {
+  position: relative;
+  left: -5px;
 
   height: 100%;
-  max-width: 500px;
+
+  font-size: clamp(6rem, 10vw, 100px);
+  font-weight: 500;
+  color: var(--font-col-1);
+
+  letter-spacing: 3px;
+  line-height: 70px;
+}
+
+.hero_section > .hero_container > p {
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-end;
+
+  max-width: 800px;
+  height: 100%;
+
   font-size: clamp(1.8rem, 2vw, 26px);
   font-weight: 200;
-  color: #fff;
+  color: var(--font-col-1);
 
   line-height: clamp (2.5rem, 3vw, 40px);
   letter-spacing: 0.5px;
+}
+
+/* Cases section */
+.cases_section {
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+.cases_container {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 30px;
+  padding: 50px 30px;
+}
+
+.cases_container > div {
+  background-color: darkgray;
+  border-radius: 8px;
+  height: 300px;
 }
