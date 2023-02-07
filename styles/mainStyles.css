@@ -117,7 +117,7 @@ nav {
   margin: 0 auto;
 }
 
-.cases_container {
+.cases_section > .cases_container {
   display: grid;
   grid-template-columns: 1fr;
   gap: 30px;
@@ -125,7 +125,16 @@ nav {
 }
 
 .cases_container > div {
-  background-color: darkgray;
-  border-radius: 8px;
-  height: 300px;
+  height: max-content;
+}
+
+.cases_container > div > img {
+  width: 100%;
+  height: 50%;
+  object-fit: cover;
+}
+
+.cases_container > div > img:hover {
+  filter: brightness(50%);
+  transition: ease-in-out;
 }

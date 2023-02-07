@@ -12,7 +12,7 @@
   /* Hero section */
   .hero_section {
     margin-top: 200px;
-    height: 50vh;
+    height: 40vh;
   }
 
   .hero_section > .hero_container {
@@ -45,6 +45,13 @@
   }
 
   .cases_container > div {
-    height: 500px;
+    height: max-content;
+  }
+
+  .cases_container > div > img {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    object-fit: contain;
   }
 }
