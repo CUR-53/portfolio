@@ -1,0 +1,17 @@
+@media screen and (min-width: 1250px) {
+  /* Hero section */
+  .hero_section {
+    margin-top: 90px;
+  }
+
+  .hero_section > .hero_content_box {
+    grid-template-columns: 1fr 1fr;
+    padding: 50px 100px;
+    gap: 0px;
+  }
+
+  .hero_section > .hero_content_box > p {
+    max-width: 800px;
+    padding-bottom: 25px;
+  }
+}
