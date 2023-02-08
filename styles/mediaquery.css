@@ -1,11 +1,21 @@
 @media screen and (min-width: 550px) {
   /* Hero section */
+  .hero_section > .hero_container {
+    padding: 90px 90px;
+  }
   .hero_section > .hero_container h2 {
-    top: 8px;
+    top: 60px;
+    left: 90px;
   }
 
   .hero_section > .hero_container > h1 {
     margin-top: 20px;
+    line-height: 100px;
+  }
+
+  /* Cases section */
+  .cases_section > .cases_container {
+    padding: 0 90px;
   }
 }
 
@@ -28,6 +38,7 @@
   }
 
   .hero_section > .hero_container > h2 {
+    top: 10px;
     left: 105px;
   }
 
@@ -46,5 +57,7 @@
   .cases_section > .cases_container {
     padding: 50px 100px;
     grid-template-columns: 1fr 1fr;
+
+    margin-bottom: 100px;
   }
 }
