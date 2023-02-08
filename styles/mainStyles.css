@@ -38,7 +38,7 @@ nav > .nav_container {
   justify-content: space-between;
 }
 
-nav > .nav_container > img {
+nav > .nav_container > a > img {
   width: 40px;
 }
 
@@ -125,6 +125,7 @@ nav > .nav_container > p {
 }
 
 .cases_container > div {
+  position: relative;
   height: max-content;
 }
 
