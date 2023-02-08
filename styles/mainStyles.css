@@ -24,12 +24,13 @@ body {
 
 /* Header section */
 nav {
-  width: 100%;
-  padding: 30px 40px;
   position: fixed;
   top: 0;
-  background-color: rgba(0, 0, 0, 0.9);
   z-index: 1;
+
+  width: 100%;
+  padding: 30px 40px;
+  background-color: rgba(0, 0, 0, 0.9);
 }
 
 nav > .nav_container {
@@ -120,12 +121,15 @@ nav > .nav_container > p {
 .cases_section > .cases_container {
   display: grid;
   grid-template-columns: 1fr;
-  gap: 30px;
+
   padding: 50px 30px;
+
+  gap: 30px;
 }
 
 .cases_container > div {
   position: relative;
+
   height: max-content;
 }
 
@@ -133,6 +137,7 @@ nav > .nav_container > p {
   width: 100%;
   height: 100%;
   border-radius: 10px;
+
   object-fit: contain;
   /*   border: 2px #fff solid; */
 }
@@ -140,5 +145,29 @@ nav > .nav_container > p {
 .cases_container > div > img:hover {
   filter: brightness(50%);
   transition: ease-in-out;
+
   cursor: pointer;
+}
+
+/* git-btn */
+.git-btn {
+  max-width: 200px;
+  margin: 0 auto 150px;
+  padding: 15px 30px;
+  font-weight: 500;
+  letter-spacing: 0.5px;
+
+  border-radius: 10px;
+  border: 2px solid #fff;
+  background-color: #000;
+  color: #fff;
+
+  text-align: center;
+
+  cursor: pointer;
+  transition: 20ms ease;
+}
+
+.git-btn:hover {
+  background-color: #222222;
 }

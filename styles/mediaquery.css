@@ -57,7 +57,5 @@
   .cases_section > .cases_container {
     padding: 50px 100px;
     grid-template-columns: 1fr 1fr;
-
-    margin-bottom: 100px;
   }
 }
